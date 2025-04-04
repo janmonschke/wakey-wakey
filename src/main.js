@@ -35,8 +35,8 @@ function render(state) {
 
 window.wakeyStatus = function status() {
   Puck.eval("status()", function (result, err) {
-    if (!result || err) {
-      alert("Web Bluetooth connection failed!\n" + (err || ""));
+    if (err) {
+      alert("status failed!\n" + (err || ""));
       return;
     }
 
@@ -48,7 +48,7 @@ window.startWakey = function status() {
   Puck.eval("startWakey()", function (result, err) {
     console.log("startWakey", result);
     if (err) {
-      alert("Web Bluetooth connection failed!\n" + (err || ""));
+      alert("startwakey failed!\n" + (err || ""));
       return;
     }
     window.wakeyStatus();
@@ -59,7 +59,7 @@ window.stopWakey = function status() {
   Puck.eval("stopWakey()", function (result, err) {
     console.log("stopWakey", result);
     if (err) {
-      alert("Web Bluetooth connection failed!\n" + (err || ""));
+      alert("stopwakey failed!\n" + (err || ""));
       return;
     }
     window.wakeyStatus();
@@ -70,7 +70,7 @@ window.setManualOn = function () {
   Puck.eval("setManualOn()", function (result, err) {
     console.log("manualOn", result);
     if (err) {
-      alert("Web Bluetooth connection failed!\n" + (err || ""));
+      alert("setmanualOn failed!\n" + (err || ""));
       return;
     }
     window.wakeyStatus();
