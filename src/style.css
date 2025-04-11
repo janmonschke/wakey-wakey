@@ -61,6 +61,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.status {
+  text-align: left;
+}
+
 .buttons {
   display: flex;
   gap: 1.5em;

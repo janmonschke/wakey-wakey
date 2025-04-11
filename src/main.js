@@ -11,9 +11,9 @@ function render(state) {
   document.querySelector("#app").innerHTML = `
     <div>
       <h1>Wakey Wakey</h1>
-      <p><code class="status">${
+      <p><pre class="status">${
         state ? JSON.stringify(state, null, 2) : "not connected"
-      }</code></p>
+      }</pre></p>
 
       <div class="buttons">
         <button onclick="wakeyStatus()">Status</button>
