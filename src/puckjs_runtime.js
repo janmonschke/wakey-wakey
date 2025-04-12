@@ -48,6 +48,7 @@ function stopWakey() {
 
 function turnOnWakeyLight() {
   green.write(1);
+  isOn = true;
 }
 
 function status() {
