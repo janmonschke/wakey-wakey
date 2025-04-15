@@ -5,7 +5,7 @@ E.setTimeZone(2);
 // Act as an NCF URL device for the controller website
 NRF.nfcURL("https://janmonschke.com/wakey-wakey");
 
-const okayToWakeTimeInMinutes = 6 * 60; // 6:00
+const okayToWakeTimeInMinutes = 6 * 60 + 30; // 6:30
 const bedtimeInMinutes = 19 * 60; // 19:00
 let manualOn = false;
 let interval = null;
